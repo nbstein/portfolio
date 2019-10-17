@@ -1,0 +1,256 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+  font-family: arial;
+  background-color: lavender;
+}
+
+header {
+  padding: 10px;
+  grid-row: 2/3;
+}
+
+header p {
+  background-color: lavender;
+  font-size: 12pt;
+  text-align: center;
+  padding: 8px;
+}
+
+h1 {
+  font-family: didot;
+  font-size: 20pt;
+  margin-top: 20px;
+  text-align: center;
+}
+p {
+  font-family: arial;
+  text-align:justify;
+  background-color: white;
+}
+nav ul{
+  list-style-type: none;
+  display: inline-flex;
+}
+nav li:hover {
+  text-decoration: underline;
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top;
+  transition-property: top;
+  z-index: 1;
+}
+.skip a:focus{
+  top: 0px;
+}
+:focus{
+  border: 2px solid black;
+}
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;  /*Makes columns go from start to end*/
+  grid-row: 7 / auto;   /*Rows go from row 7 to bottom of page*/
+  padding-top: 30px;
+  text-align: center;
+}
+
+footer p{
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: 30px auto auto auto auto auto 100px;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 15px;
+  width: 100vw;
+}
+
+.nav{
+  background-color: #ddd;
+  padding: 20px 0;
+  text-align: left;
+  justify-content: center;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.photography-img{
+  grid-column: 1/3;
+  grid-row: 3/4;
+  object-fit: contain;
+  max-height: 300px;
+  max-width: 300px;
+  align-items: left;
+  overflow: hidden;
+}
+
+.photography{
+  grid-column: 2/-1;
+  grid-row: 3/4;
+}
+
+.vly-img{
+  grid-column: 3/-1;
+  grid-row: 4/5;
+  object-fit: contain;
+  max-width: 200px;
+  align-items: right;
+  overflow: hidden;
+}
+
+.vly{
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.kw-img{
+  grid-column:1/2;
+  grid-row: 5/6;
+  object-fit: contain;
+  max-width: 200px;
+  align-items: left;
+  overflow: hidden;
+}
+
+.kw{
+  grid-column: 2/-1;
+  grid-row: 5/6;
+}
+
+.bujo-img{
+  grid-column:3/-1;
+  grid-row: 6/7;
+  object-fit: contain;
+  max-width: 200px;
+  align-items: right;
+  overflow: hidden;
+}
+
+.bujo{
+  grid-column: 1/3;
+  grid-row: 6/7;
+}
+
+.text-block{
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .container{
+    display: grid;
+    grid-template-rows: 30px auto auto auto auto auto 100px;
+    grid-template-columns: 50px auto 500px auto 50px;
+  }
+
+  .nav{
+    background-color: #ddd;
+    text-align: right;
+    justify-content: center;
+    padding: 35px 0;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    grid-row: span 1;
+  }
+
+  .photography-img{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    object-fit: contain;
+    max-width: 200px;
+    height: 200px;
+    align-items: left;
+    overflow: hidden;
+    }
+
+  .photography{
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+
+  .vly-img{
+    grid-column: 3/5;
+    grid-row: ;
+    object-fit: contain;
+    max-width: 200px;
+    height: 200px;
+    align-items: right;
+    overflow: hidden;
+  }
+
+  .vly{
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+
+  .kw-img{
+
+    grid-column: 2/4;
+    grid-row: 5/6;
+    object-fit: contain;
+    max-width: 200px;
+    height: 200px;
+    align-items: left;
+    overflow: hidden;
+  }
+
+  .kw{
+    grid-column: 3/5;
+    grid-row: 5/6;
+  }
+
+  .bujo-img{
+    grid-column: 3/5;
+    grid-row: 6/7;
+    object-fit: contain;
+    max-width: 200px;
+    height: 200px;
+    align-items: right;
+    overflow: hidden;
+  }
+
+  .bujo{
+    grid-column: 2/4;
+    grid-row: 6/7;
+   }
+
+}  /*End the media query*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top; /* Your code here - set to default setting */
+    transition: top; /* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
