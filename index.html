@@ -1,64 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-  	  <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151954665-1"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-151954665-1');
+      </script>
+
+      <link rel="stylesheet" href="css/style.css">
       <title>Nell's Portfolio</title>
 </head>
 <body>
-  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+  <div class="skip"><a href=".photography">Skip to Main Content</a></div>
   <div class="container">
+  <header class = "main">
+    <h1 class="hit-the-floor">Nell Steinmetz</h1>
+    <p>Student and aspiring UX designer</p>
+  </header>
   <div class="nav">
     <nav>
       <ul>
-        <li><a href = "index.html">Home | </a></li>
-        <li><a href = "photography.html">Photography | </a></li>
-        <li><a href = "vly.html">Vly Foods | </a></li>
-        <li><a href = "kw.html">KW Rebranding | </a></li>
-        <li><a href = "bujo.html">Bullet Journal |</a></li>
+        <li><a href = "index.html" class = "active">Home</a></li>
+        <li><a href = "photography.html">Photography</a></li>
+        <li><a href = "vly.html">Vly</a></li>
+        <li><a href = "kw.html">KW</a></li>
+        <li><a href = "bujo.html">Bullet Journal</a></li>
         <li><a href = "contact.html">Contact</a></li>
       </ul>
     </nav>
-  <header id = "main">
-  <h1>Nell Steinmetz</h1>
-  <p>Student and aspiring UX designer.</p>
-  </header>
-  <div class="photography-img">
-    <img src="images/photography.jpg" alt="decorative"/>
   </div>
-  <div class="photography text-block">
-    <a name="photography"></a>
-    <h2><a href = "photography.html">Photography</a></h2>
-    <p>In my free time, I enjoy taking photos of landscapes, my friends, and family. Click to see some of my favorites.</p>
+  <div class = "links">
+  <div class="photography">
+    <img class = "photoimg" src="images/photography.jpg" alt="decorative"/>
+    <h2><a class = "photo-link" href = "photography.html">Photography</a></h2>
   </div>
-  <div class="vly-img">
-    <img src="images/vly.png" alt="decorative"/>
-  </div>
-  <div class="vly text-block">
-    <a name="vly"></a>
+  <div class="vly-link">
+    <img class = "vlyimg" src="images/vly.png" alt="decorative"/>
     <h2><a href = "vly.html">Vly Foods</a></h2>
-    <p>After spending 4 weeks working with Vly Foods in Berlin, Germany, I redesigned their website using Shopify and Adobe InDesign in order to better represent their voice and branding. Click to read and see more! </p>
   </div>
-  <div class="kw-img">
-    <img src="images/kw.png" alt="decorative"/>
-  </div>
-  <div class="kw text-block">
-    <a name="kw"></a>
+  <div class="kw-link">
+    <img class = "kwimg" src="images/kw.png" alt="decorative"/>
     <h2><a href = "kw.html">KW Rebranding</a></h2>
-    <p>As an assignment for a digital design course, Anamaria Silic and I rebranded the KW Museum for Contemporary Art in Berlin, Germany to make it appeal to Gen Z. Click to see more! </p>
   </div>
-  <div class="bujo-img">
-    <img src="images/bujo.png" alt="decorative"/>
+  <div class="bujo">
+    <img class = "bujoimg" src="images/bujo.png" alt="decorative"/>
+    <h2><a class = "bujo-link" href = "bujo.html">Bullet Journal</a></h2>
   </div>
-  <div class="bujo text-block">
-    <a name="bujo"></a>
-    <h2><a href = "bujo.html">Bullet Journal</a></h2>
-    <p>In my spare time, I like to design my own planners from scratch called bullet journals. Click to take a look at some of my spreads!</p>
+</div>
   </div>
   <footer>
     <p> &copy; Nell Steinmetz 2019</p>
   </footer>
-  </div>
 </body>
 </html>
